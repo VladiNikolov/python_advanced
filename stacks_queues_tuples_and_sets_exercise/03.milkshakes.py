@@ -13,7 +13,7 @@ while chocolate_packages and milk_cups and milkshakes < 5:
         continue
 
     if chocolate <= 0:
-        milk_cups.append(milk)
+        milk_cups.appendleft(milk)
         continue
 
     if milk <= 0:
@@ -39,4 +39,4 @@ else:
 if milk_cups:
     print(f"Milk: {', '.join([str(i) for i in milk_cups])}")
 else:
-    print("Chocolate: empty")
+    print("Milk: empty")
